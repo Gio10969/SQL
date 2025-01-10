@@ -1,59 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# # Hola Giovani!
-# 
-# Mi nombre es David Bautista, soy code reviewer de Tripleten y hoy tengo el gusto de revisar tu proyecto.
-# 
-# Cuando vea un error laa primera vez, lo señalaré. Deberás encontrarlo y arreglarlo. La intención es que te prepares para un espacio real de trabajo. En un trabajo, el líder de tu equipo hará lo mismo. Si no puedes solucionar el error, te daré más información en la próxima ocasión.
-# 
-# Encontrarás mis comentarios más abajo - por favor, no los muevas, no los modifiques ni los borres.
-# 
-# ¿Cómo lo voy a hacer? Voy a leer detenidamente cada una de las implementaciones que has llevado a cabo para cumplir con lo solicitado. Verás los comentarios de esta forma:
-# 
-# <div class="alert alert-block alert-success">
-# <b>Comentario del revisor</b> <a class="tocSkip"></a>
-#     
-# Si todo está perfecto.
-# </div>
-# 
-# 
-# <div class="alert alert-block alert-warning">
-# <b>Comentario del revisor</b> <a class="tocSkip"></a>
-#     
-# Si tu código está bien pero se puede mejorar o hay algún detalle que le hace falta.
-# </div>
-# 
-# 
-# <div class="alert alert-block alert-danger">
-#     
-# <b>Comentario del revisor</b> <a class="tocSkip"></a>
-#     
-# Si de pronto hace falta algo o existe algún problema con tu código o conclusiones.
-# </div>
-# 
-# 
-# Puedes responderme de esta forma: 
-# 
-# <div class="alert alert-block alert-info">
-# <b>Respuesta del estudiante</b> <a class="tocSkip"></a>
-# </div>
-# 
-# ¡Empecemos!
-
-# <div class="alert alert-block alert-danger">
-# <b>Comentario del revisor</b> <a class="tocSkip"></a>
-#     
-# # Comentario General
-#     
-# Hola Giovani, te felicito por el desarrollo del proyecto. He dejado algunos comentarios en rojo para que lo puedas tener en cuenta para la siguiente entrega.  </div>
-# 
-
-# <div class="alert alert-block alert-danger">
-# <b>Comentario del revisor</b> <a class="tocSkip"></a>
-#     
-# Giovani, no olvides que es fundamental generar una sección de contenido e introducción del proyecto.  </div>
-
 # # Proyecto 
 
 # ## Introcucción .
@@ -123,13 +67,6 @@ import matplotlib.pyplot as plt
 from scipy.stats import ttest_ind, levene 
 
 
-# <div class="alert alert-block alert-success">
-# <b>Comentario del revisor</b> <a class="tocSkip"></a>
-#     
-# Genial, buen trabajo importando las librerías necesarias para el desarrollo del proyecto. </div>
-
-# ## Importar archivos
-
 # In[2]:
 
 
@@ -137,11 +74,6 @@ df_trips = pd.read_csv('/datasets/project_sql_result_01.csv')
 df_dropoff = pd.read_csv('/datasets/project_sql_result_04.csv')
 df = pd.read_csv('/datasets/project_sql_result_07.csv')
 
-
-# <div class="alert alert-block alert-success">
-# <b>Comentario del revisor</b> <a class="tocSkip"></a>
-#     
-# Perfecto, buen trabajo cargando los datos necesarios para el desarrollo del proyecto.  </div>
 
 # In[3]:
 
@@ -171,11 +103,6 @@ print(top_10_dropoff)
 
 
 # Para los datos proporcionados se muestran los valores de las empresas con mayor cantidad de viajes realizados, liderando "Flash Cab" que consta con casi 20000 viajes realizados (empresas de taxis), filtraremos las que mas viajes realizan para determinar un filtro de ellas en futuros datos, además se observan los valores de las 10 principales locaciones de "terminos de recorrido de estos viajes" todos teniendo en punto de inicio el aeropuerto.
-
-# <div class="alert alert-block alert-success">
-# <b>Comentario del revisor</b> <a class="tocSkip"></a>
-#     
-# Perfecto, buen trabajo desarrollando esta exploración inicial de las dos tablas. Si lo consideras prudente, sería interesante ampliar el análisis con el uso de métodos como ``describe()``.  </div>
 
 # ## Graficas
 
@@ -212,10 +139,6 @@ plt.show()
 
 # Este grafico muestra las 10 locaciones que se utilizaron como destino desde el aeropuerto, con "Loop" con mas de 10000 viajes realizados hacia allí y a "Sheffield & DePaul" con poco mas de 1200 destinos finalizados. 
 
-# <div class="alert alert-block alert-success">
-# <b>Comentario del revisor</b> <a class="tocSkip"></a>
-#     
-# Perfecto, buen trabajo con el desarrollo de los dos gráficos Giovani. </div>
 
 # ## Prueba de hipotesis.
 
@@ -263,11 +186,6 @@ else:
 # 
 # Con esta información, podemos proceder con el test t de Student estándar para comparar las medias de los dos grupos y determinar si hay una diferencia significativa en la duración promedio de los viajes entre los sábados lluviosos y no lluviosos.
 
-# <div class="alert alert-block alert-danger">
-# <b>Comentario del revisor</b> <a class="tocSkip"></a>
-#     
-# Buen trabajo con el desarrollo de la sección de prueba de hipótesis, lo único que te recomiendo es poder desarrollar un análisis comparativo de las varianzas de los dos grupos, lo anterior teniendo en cuenta que es un componente que se deberia fijar como un argumento dentro de la prueba. </div>
-
 # ## Conclusión.
 
 # El primer resultado del test de hipótesis muestra un valor p muy pequeño (6.52e-12), lo que indica que hay una diferencia significativa en la duración promedio de los viajes desde el Loop hasta el Aeropuerto Internacional O'Hare entre los sábados lluviosos y no lluviosos. Con un nivel de significancia de 0.05, rechazamos la hipótesis nula y concluimos que la duración promedio de los viajes es significativamente diferente en los sábados lluviosos en comparación con los sábados no lluviosos.
@@ -276,7 +194,3 @@ else:
 # 
 # Con esta información, podemos proceder con el test t de Student estándar para comparar las medias de los dos grupos y determinar si hay una diferencia significativa en la duración promedio de los viajes entre los sábados lluviosos y no lluviosos.
 
-# <div class="alert alert-block alert-success">
-# <b>Comentario del revisor</b> <a class="tocSkip"></a>
-#     
-# Buen trabajo Giovani. </div>
